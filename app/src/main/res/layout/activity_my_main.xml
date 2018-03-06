@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="franhida.pruebat2pablohidalgomartinez.MyMain">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/iVAndroidToolbarIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/toolbarIcon"
+        android:src="@drawable/ic_android_black_24dp" />
+
+    <ImageView
+        android:id="@+id/iVForest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/name"
+        android:src="@mipmap/forest" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iVMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="280dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="420dp"
+        android:src="@mipmap/fox" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="430dp"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnUninstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="215dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/btnUninstall"
+        android:textColor="#216FED" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="500dp"
+        android:background="#216FED"
+        android:text="@string/btnUpdate"
+        android:textColor="@android:color/background_light" />
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sRLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="580dp">
+
+        <TextView
+            android:id="@+id/tvInfiniteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/infiniteText" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>
